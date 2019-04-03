@@ -2,6 +2,6 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: nifi-storage-class
-provisioner: {{ .Values.storageProvisioner | quote }}
+provisioner: do-block-storage
 parameters:
   type: {{ .Values.storageType | quote }}
